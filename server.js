@@ -1,20 +1,30 @@
 var http = require("http");
 
+var config = require('./public/config');
+
 var Router = require("routes-router");
 
 var sendHtml = require("send-data/html");
+
+var nominees = require('./public/nomineeYears.js')
 
 var fs = require("fs");
 
 var st = require('st');
 
-var router = Router();
+var db = require("orchestrate")(config.dbKey);
 
+var router = Router();
 
 router.addRoute("/api", {
 
 	GET: function(req, res, opts){
 			console.log("getting. . . ");
+			db.get('nominees', results.values[0])
+.then(function (res) {
+  console.log(res.body);
+})
+.fail(function (err) {});
 			console.log(JSON.stringify(opts));
 			res.end("Got it!")
 	},
