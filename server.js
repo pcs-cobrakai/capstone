@@ -1,44 +1,34 @@
-var http = require("http");
+var http 		= require("http"),
+	config  	= require('./config'),
+	Router  	= require("routes-router"),
+	nominees 	= require('./public/nomineeYears.js'),
+	st 			= require('st'),
+	db 			= require("orchestrate")(config.dbKey),
+	router 		= Router();
 
-var config = require('./public/config');
+// for(key in nominees){ 
+// 	db.put("capstone", key, {
+// 		titles: nominees[key]
+// 	})
+// };
 
-var Router = require("routes-router");
 
-var nominees = require('./public/nomineeYears.js')
+router.addRoute("/year/:req", {
 
-var st = require('st');
+	var year = opts.params.year;
 
-var db = require("orchestrate")(config.dbKey);
-
-var router = Router();
+	GET: function(req, res, opts){
+			console.log("getting. . . ");
+			db.get('nominees', "results")
+			.then(function (res) {
+  				console.log(res.body);
+			})
+			.fail(function (err) {});
 			
-
-router.addRoute("/year", function(){
-
-
-	// GET: function(req, res, opts){
-	// 		console.log("getting. . . ");
-	// 		db.get('nominees', "results")
-	// 		.then(function (res) {
- //  				console.log(res.body);
-	// 		})
-	// 		.fail(function (err) {});
-			
-	// 		res.end("Got it!")
-	// },
-
-	// POST: function(req, res, opts){
-	// 		console.log("putting. . . ");
-	// 		console.log(JSON.stringify(opts));
-	// 		res.end("It's posted!")
-	// }
+			res.end("Got it!")
+	}
 })
 
-
-// router.addRoute("/year/:name", function (req,res,opts) {
-//     var name = opts.params.name;
-//     res.end("hello, "+name+"!")
-// })
 
 router.addRoute("/*", st({
 
