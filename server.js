@@ -19,7 +19,7 @@ router.addRoute("/year/:req", {
 
 	GET: function(req, res, opts){
 			console.log("getting. . . ");
-			db.get('nominees', "results")
+			db.get('nominees', "req")
 			.then(function (res) {
   				console.log(res.body);
 			})
