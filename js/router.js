@@ -11,6 +11,7 @@ atna.router = Backbone.Router.extend({
 	},
 	
 	index: function() {
-		console.log('hello from the index page!');
+		console.log('hello from the index page! \n==>(router.js line 14)');
+		new atna.views.atna;
 	}
 });
