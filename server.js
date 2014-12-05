@@ -13,19 +13,24 @@ var http 		= require("http"),
 // };
 
 
-router.addRoute("/year/:req", {
 
-	var year = opts.params.year;
+router.addRoute("/year/:year", {
 
 	GET: function(req, res, opts){
+
+		var year = opts.params.year;
+
 			console.log("getting. . . ");
-			db.get('nominees', "req")
-			.then(function (res) {
-  				console.log(res.body);
+			console.log(year, "REQ");
+			db.get('capstone', year)
+			.then(function (dbRes) {
+  				console.log(dbRes.body);
+  				//send res.end dbRes.body
+  				res.end(JSON.stringify(dbRes.body));
 			})
-			.fail(function (err) {});
-			
-			res.end("Got it!")
+			.fail(function (err) {
+				res.end(err);
+			});
 	}
 })
 
