@@ -1,0 +1,37 @@
+{
+  "name": "ATNA",
+  "version": "1.0.0",
+  "description": "Academy Award Nominee Trailers",
+  "main": "server.js",
+  "dependencies": {
+    "expect.js": "^0.3.1",
+    "data": "^0.6.1",
+    "json": "^9.0.2",
+    "jquery": "^2.1.1",
+    "orchestrate": "^0.3.14",
+    "json-parser": "^0.2.4",
+    "json-stringify": "^0.1.3",
+    "package.json": "^0.0.0",
+    "routes-router": "^4.1.1",
+    "package": "^1.0.1",
+    "st": "^0.5.2",
+    "send-data": "^3.3.3",
+    "vows": "^0.8.1",
+    "wikipedia-js": "^0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcs-cobrakai/capstone.git"
+  },
+  "author": "Jack Parker, Adam Gomez, Dallas Summers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcs-cobrakai/capstone/issues"
+  },
+  "homepage": "https://github.com/pcs-cobrakai/capstone"
+}

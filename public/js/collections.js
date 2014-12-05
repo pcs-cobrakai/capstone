@@ -5,6 +5,8 @@
 *
 */
 
+var apiKey = 'da1213cb709d4b012442e39d58ec6234';
+
 atna.collections.movies = Backbone.Collection.extend({
 	
 	model: atna.models.movie/*,
@@ -23,8 +25,6 @@ atna.getYear = function(year) {
 }
 
 // console.log(atna.getYear('1980'));
-
-// api key: da1213cb709d4b012442e39d58ec6234
 
 // api config url: http://api.themoviedb.org/3/configuration?api_key=da1213cb709d4b012442e39d58ec6234
 // example url: https://api.themoviedb.org/3/search/movie?api_key=da1213cb709d4b012442e39d58ec6234&query=interstellar
