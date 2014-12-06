@@ -4,28 +4,36 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>And The Nominees Are... | Find academy award nominees by year</title>
-		<link rel="stylesheet" type="text/css" media="all" href="./style.css">
+		<link rel="stylesheet" type="text/css" media="all" href="style.css">
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body>
 		
-		<h1>And the nominees are...</h1>
-		
 		<div id="atna">
 			<!-- This div is where we'll be adding our backbone app to the dom. -->
 		</div>
 		
-		<script type="text/javascript" src="./lib/jquery.min.js"></script>
-	    <script type="text/javascript" src="./lib/underscore.min.js"></script>
-	    <script type="text/javascript" src="./lib/backbone.min.js"></script>
-	    <script type="text/javascript" src="./js/main.js"></script>
-	    <script type="text/javascript" src="./js/models.js"></script>
-	    <script type="text/javascript" src="./js/collections.js"></script>
-	    <script type="text/javascript" src="./js/views.js"></script>
-	    <script type="text/javascript" src="./js/router.js"></script>
-	    <script type="text/template"   src="./templates/movie.js"></script>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+	    <script type="text/javascript" src="lib/underscore.min.js"></script>
+	    <script type="text/javascript" src="lib/backbone.min.js"></script>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    <script type="text/javascript" src="js/models.js"></script>
+	    <!-- <script type="text/javascript" src="js/collections.js"></script> -->
+	    <script type="text/javascript" src="js/views.js"></script>
+	    <script type="text/javascript" src="js/router.js"></script>
+	    <script type="text/template"   id="main-template">
+	    	<h1>And The Nominees Are...</h1>
+
+			<select>
+				<option>Please Select A Year</option>
+				<option>1982</option>
+				<option>1981</option>
+				<option>1980</option>
+			</select>
+	    </script>
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				

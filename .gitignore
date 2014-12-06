@@ -1,5 +1,4 @@
 /node_modules/
-
 /testServer/
 
 /public/config.js
@@ -9,5 +8,7 @@
 /public/config.js
 
 /public/nomineeYears.js
+
+/public/lib/
 
 /npm-debug.log.back
