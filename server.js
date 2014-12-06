@@ -3,7 +3,7 @@ var http 		= require("http"),
 	Router  	= require("routes-router"),
 	nominees 	= require('./public/nomineeYears.js'),
 	st 			= require('st'),
-	db 			= require("orchestrate")(config.dbKey),
+	db 			= require("orchestrate")(config.dbKey) || require('orchestrate')(process.env(DB_KEY)),
 	router 		= Router();
 
 
@@ -14,7 +14,6 @@ var http 		= require("http"),
 // 		titles: nominees[key]
 // 	})
 // };
-
 
 
 router.addRoute("/year/:year", {
