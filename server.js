@@ -30,7 +30,7 @@ router.addRoute("/year/:year", {
 			db.get('capstone', year).then(function (dbRes) {
   				console.log(dbRes.body);
 
-  				res.end(dbRes.body);
+  				res.end(JSON.stringify(dbRes.body));
 			
 			}).fail(function (err) {
 				
