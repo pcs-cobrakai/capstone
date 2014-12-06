@@ -22,15 +22,12 @@ router.addRoute("/year/:year", {
 	GET: function(req, res, opts){
 
 		var year = opts.params.year;
-
-			// console.log("getting. . . ");
-			
-			// console.log(year, "REQ");
 			
 			db.get('capstone', year).then(function (dbRes) {
+  				
   				console.log(dbRes.body);
 
-  				res.end(dbRes.body);
+  				res.end(JSON.stringify(dbRes.body));
 			
 			}).fail(function (err) {
 				

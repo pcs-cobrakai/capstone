@@ -27,10 +27,13 @@
 	    <script type="text/javascript" src="./js/router.js"></script>
 	    <script type="text/template"   src="./templates/movie.js"></script>
 		<script type="text/javascript">
-			
-			// get our routes going
-			new atna.router;
-			Backbone.history.start();
+			$(document).ready(function() {
+				
+				// get our routes going
+				new atna.router('bar');
+				Backbone.history.start();
+				
+			});
 			
 		</script>
 		
