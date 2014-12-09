@@ -1,6 +1,5 @@
 var http 		= require("http"),
 	Router  	= require("routes-router"),
-	nominees 	= require('./public/nomineeYears.js'),
 	st 			= require('st'),
 	router 		= Router();
 
