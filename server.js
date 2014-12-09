@@ -3,7 +3,7 @@ var http 		= require("http"),
 	Router  	= require("routes-router"),
 	nominees 	= require('./public/nomineeYears.js'),
 	st 			= require('st'),
-	// db 			= require("orchestrate")(config.dbKey) || require('orchestrate')(process.env(DB_KEY)),
+	// || require('orchestrate')(process.env(DB_KEY)),
 	router 		= Router();
 
 try {
@@ -14,6 +14,8 @@ catch (err) {
 		dbKey:     process.env.DBKEY		
 	}
 }
+
+db 			= require("orchestrate")(config.dbKey);
 
 // for(key in nominees){ 
 	
