@@ -1,10 +1,23 @@
 var http 		= require("http"),
-	config  	= require('./public/config'),
 	Router  	= require("routes-router"),
 	nominees 	= require('./public/nomineeYears.js'),
 	st 			= require('st'),
-	db 			= require("orchestrate")(config.dbKey) || require('orchestrate')(process.env(DB_KEY)),
 	router 		= Router();
+
+	try{
+
+		var config = require("./public/config.js");
+	}
+
+	catch(err){
+
+		var config = {
+
+			dbKey: process.env.DBKEY
+		}
+	};
+
+var db = require("orchestrate")(config.dbKey);
 
 
 // for(key in nominees){ 
@@ -21,12 +34,9 @@ router.addRoute("/year/:year", {
 	GET: function(req, res, opts){
 
 		var year = opts.params.year;
-
-			// console.log("getting. . . ");
-			
-			// console.log(year, "REQ");
 			
 			db.get('capstone', year).then(function (dbRes) {
+  				
   				console.log(dbRes.body);
 
   				res.end(JSON.stringify(dbRes.body));
