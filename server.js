@@ -4,18 +4,12 @@ var http 		= require("http"),
 	st 			= require('st'),
 	router 		= Router();
 
-	try{
+	var config = (process.env.HEROKU)? 
+	{ 
+		dbKey:     process.env.DBKEY
+	}:
+	require('./public/config.js');
 
-		var config = require("./public/config.js");
-	}
-
-	catch(err){
-
-		var config = {
-
-			dbKey: process.env.DBKEY
-		}
-	};
 
 var db = require("orchestrate")(config.dbKey);
 
