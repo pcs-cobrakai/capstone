@@ -1,12 +1,19 @@
 var http 		= require("http"),
-	config  	= require('./public/config.js'),
+	// config  	= require('./public/config.js'),
 	Router  	= require("routes-router"),
 	nominees 	= require('./public/nomineeYears.js'),
 	st 			= require('st'),
-	db 			= require("orchestrate")(config.dbKey) || require('orchestrate')(process.env(DB_KEY)),
+	// db 			= require("orchestrate")(config.dbKey) || require('orchestrate')(process.env(DB_KEY)),
 	router 		= Router();
 
-
+try {
+	var config = require('./public/config.js');
+}
+catch (err) {
+	var config = {
+		dbKey:     process.env.DBKEY		
+	}
+}
 
 // for(key in nominees){ 
 	
