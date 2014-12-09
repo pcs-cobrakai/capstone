@@ -49,7 +49,8 @@ router.addRoute("/*", st({
 	index:'/index.html',
 }))
 
+var port = (process.env.PORT || 5000);
 
-http.createServer(router).listen(4004)
+http.createServer(router).listen(port)
 
-console.log('server listening on port #4004');
+console.log('server listening on port ' + port);
