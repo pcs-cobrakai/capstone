@@ -20,6 +20,7 @@ atna.views.atna = Backbone.View.extend({
 			// make our request for movies titles from database
 			$.get('/year/' + $(this).val(), function(data) {
 				dataObject = JSON.parse(data);
+				
 				// render our results view
 				atna.views.resultsView = new atna.views.movieResults(dataObject);
 			});
