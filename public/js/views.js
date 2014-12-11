@@ -33,6 +33,9 @@ atna.views.atna = Backbone.View.extend({
 		
 		// render the years for the dropdown
 		this.makeYears();
+		
+		// initialize the dropdown js plugin
+		$('select#year').customSelect();
 	},
 	
 	makeYears: function() {
