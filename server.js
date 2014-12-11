@@ -1,9 +1,8 @@
 var http 		= require("http"),
 	Router  	= require("routes-router"),
 	st 			= require('st'),
-	router 		= Router();
-
-	var config = (process.env.HEROKU)? 
+	router 		= Router(),
+	config 		= (process.env.HEROKU)? 
 	{ 
 		dbKey:     process.env.DBKEY
 	}:
@@ -35,6 +34,8 @@ router.addRoute("/year/:year", {
   				res.end(JSON.stringify(dbRes.body));
 			
 			}).fail(function (err) {
+
+				res.statusCode = 404;
 				
 				res.end(err);
 			});
