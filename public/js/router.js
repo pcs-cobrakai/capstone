@@ -13,6 +13,7 @@ atna.router = Backbone.Router.extend({
 	index: function() {
 		atna.helpers.apiKey    = 'da1213cb709d4b012442e39d58ec6234';
 		atna.helpers.searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=';
+		atna.helpers.movieURL  = 'https://api.themoviedb.org/3/movie/';
 		
 		// get our config objects from the API
 		$.getJSON('http://api.themoviedb.org/3/configuration?api_key=' + atna.helpers.apiKey, function(apiConfig) {

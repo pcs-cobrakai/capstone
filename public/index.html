@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" media="all" href="css/normalize.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
 		<link rel="stylesheet" type="text/css" media="all" href="font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="js/fancybox/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" media="all" href="js/fancybox/jquery.fancybox-buttons.css">
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -60,9 +62,12 @@
 			<header class="truncate" title="<%= title %>"><%= title %></header>
 			<div class="poster-container">
 				<img src="<%= poster %>" class="thumbnail" alt="<%= title %>" title="<%= title %>">
-				<a class="view-trailer" href="#0"><span>View Trailer</span></a>
+				<a class="view-trailer" href="#trailer-<%= trailer_id %>"><span>View Trailer</span></a>
 			</div><!--.poster-container-->
 			<footer><!-- Other content will go here --></footer>
+			<div id="trailer-<%= trailer_id %>" style="display: none;">
+				<iframe width="640" height="390" frameborder="0" title="YouTube video player" type="text/html" src="http://www.youtube.com/embed/<%= trailer_id %>?enablejsapi=1"></iframe>
+			</div>
 	    </script>
 		
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
@@ -77,6 +82,7 @@
 	    <script type="text/javascript" src="js/views.js"></script>
 	    <script type="text/javascript" src="js/router.js"></script>
 	    <script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+	    <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
 		<script src="//use.typekit.net/gwd3ykr.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 		
