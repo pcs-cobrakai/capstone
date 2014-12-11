@@ -21,7 +21,7 @@
 	};
 	
 	/*
-$.get('/year/1980', function(data) {
+$.getJSON('/year/1980', function(data) {
 		
 	});
 	
@@ -38,7 +38,7 @@ $.get('/year/1980', function(data) {
 		var encoded = encodeURIComponent(winners[index]);
 		
 		// get the results
-		$.get('https://api.themoviedb.org/3/search/movie?api_key=' + apiKey + '&query=' + encoded, function(data) {
+		$.getJSON('https://api.themoviedb.org/3/search/movie?api_key=' + apiKey + '&query=' + encoded, function(data) {
 			results.push(data);
 			console.log(data);
 		});

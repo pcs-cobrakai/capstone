@@ -11,13 +11,13 @@ atna.router = Backbone.Router.extend({
 	},
 	
 	index: function() {
-		// store our API key for calls to the API
-		var apiKey = 'da1213cb709d4b012442e39d58ec6234';
+		atna.helpers.apiKey    = 'da1213cb709d4b012442e39d58ec6234';
+		atna.helpers.searchURL = 'https://api.themoviedb.org/3/search/movie?api_key=';
 		
 		// get our config objects from the API
-		$.get('http://api.themoviedb.org/3/configuration?api_key=' + apiKey, function(apiConfig) {
+		$.getJSON('http://api.themoviedb.org/3/configuration?api_key=' + atna.helpers.apiKey, function(apiConfig) {
 			var baseURL    = apiConfig.images.base_url,
-				posterSize = apiConfig.images.poster_sizes[0];
+				posterSize = apiConfig.images.poster_sizes[1];
 			
 			atna.helpers.mainURL = baseURL + posterSize + '/';
 			
