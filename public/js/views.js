@@ -52,19 +52,33 @@ atna.views.atna = Backbone.View.extend({
 // ===== movie results view =====
 
 atna.views.movieResults = Backbone.View.extend({
-	el: '#atna',
+	el: '#results-list',
 	
 	initialize: function(data) {
 		this.data = data;
 		this.render();
 		
-		$.each(this.data.titles, function(index) {
-			atna.views.singleView = new atna.views.movieView;
+		var me = this;
+		
+		$.each(me.data.titles, function(index) {
+			var title = me.data.titles[index];
+			
+			// encode the title for use in the API call
+			var encoded = encodeURIComponent(title);
+			
+			// get the data from the api
+			$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded, function(data) {
+				data = data.results[0];
+				
+				if(data) {
+					atna.views.singleView = new atna.views.movieView(data);
+				}
+			});
 		});
 	},
 
 	render: function() {
-		this.$el.append('<div id="results-view">I\'m the results view!</div>');
+		this.$el.html('');
 	}
 });
 
@@ -76,14 +90,24 @@ atna.views.movieResults = Backbone.View.extend({
 
 atna.views.movieView = Backbone.View.extend({
 		
-	el: '#results-view',
+	tagName: 'article',
 	
-	initialize: function() {
+	className: 'results-list-item',
+	
+	template: _.template($('#movie-template').html()),
+	
+	initialize: function(data) {
+		this.data = data;
+		console.log(this.data);
+		this.movieInfo = {
+			title: this.data.title,
+			poster: atna.helpers.mainURL + this.data.poster_path
+		}
 		this.render();
 	},
 	
 	render: function() {
-		this.$el.append('<p>I\'m a movie view</p>')
+		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
 	}
 	
 });
