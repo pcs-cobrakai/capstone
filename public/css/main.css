@@ -63,12 +63,12 @@ textarea {
    ========================================================================== */
 
 body {
-  font: 16px/26px 'Montserrat', "proxima-nova", Helvetica Neue, Helvetica, Arial;
+  font: 16px/26px "proxima-nova", "Times New Roman", Helvetica Neue, Helvetica, Arial;
   background: #eaeaea;
 }
 
 .wrapper {
-  width: 90%;
+  width: 90%; 
   margin: 0 5%;
 }
 
