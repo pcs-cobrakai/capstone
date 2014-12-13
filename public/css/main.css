@@ -440,7 +440,7 @@ section.select-year {
   }
 
   .main article.results-list-item .poster-container:hover .view-trailer {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(241, 196, 15, .8);
     color: #fff;
     cursor: pointer;
     display: block;
@@ -456,9 +456,11 @@ section.select-year {
 
   .main article.results-list-item .poster-container .view-trailer span {
     display: block;
-    margin: 93px 0 0;
-  }
-
+    margin: 95px 10px 0px 10px;
+    font-size: 1em;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
 }
 
 /* ==========================================================================
