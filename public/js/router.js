@@ -18,7 +18,7 @@ atna.router = Backbone.Router.extend({
 		// get our config objects from the API
 		$.getJSON('http://api.themoviedb.org/3/configuration?api_key=' + atna.helpers.apiKey, function(apiConfig) {
 			var baseURL    = apiConfig.images.base_url,
-				posterSize = apiConfig.images.poster_sizes[1];
+				posterSize = apiConfig.images.poster_sizes[2];
 			
 			atna.helpers.mainURL = baseURL + posterSize + '/';
 			
