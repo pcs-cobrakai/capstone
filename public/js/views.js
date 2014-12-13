@@ -19,7 +19,7 @@ atna.views.atna = Backbone.View.extend({
 			
 			// make our request for movies titles from database
 			$.get('/year/' + $(this).val(), function(data) {
-				dataObject = JSON.parse(data);
+				var dataObject = JSON.parse(data);
 				
 				// render our results view
 				atna.views.resultsView = new atna.views.movieResults(dataObject);
@@ -101,16 +101,24 @@ atna.views.movieView = Backbone.View.extend({
 	
 	initialize: function(data) {
 		this.data = data;
-		console.log(this.data);
-		this.movieInfo = {
-			title: this.data.title,
-			poster: atna.helpers.mainURL + this.data.poster_path
-		}
-		this.render();
+		var that = this;
+		$.getJSON(atna.helpers.movieURL + this.data.id + '?api_key=' + atna.helpers.apiKey + '&append_to_response=trailers', function(trailerData) {
+			that.movieInfo = {
+				title: that.data.title,
+				poster: atna.helpers.mainURL + that.data.poster_path,
+				trailer_id: trailerData.trailers.youtube[0].source
+			}
+			that.render();
+		});
 	},
 	
 	render: function() {
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
+		
+		//fancybox
+		$('.view-trailer').fancybox({
+			padding: 5
+		});
 	}
 	
 });
