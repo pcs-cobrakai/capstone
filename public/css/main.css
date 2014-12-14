@@ -63,7 +63,7 @@ textarea {
    ========================================================================== */
 
 body {
-  font: 16px/26px "proxima-nova", Helvetica Neue, Helvetica, Arial;
+  font: 16px/26px "proxima-nova", "Helvetica Neue", Helvetica, Arial;
   background: #eaeaea;
 }
 
@@ -179,11 +179,43 @@ nav a:hover {
 }
 
 
+.main article.results-list-item .poster-container {
+  position: relative;
+}
+
+.main article.results-list-item .poster-container .view-trailer {
+  display: none;
+}
+
+.main article.results-list-item .poster-container:hover .view-trailer {
+  background-color: rgba(241, 196, 15, .8);
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 999;
+}
+
+.main article.results-list-item .poster-container .view-trailer span {
+  display: block;
+  margin: 95px 10px 0px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
 .footer-container footer {
   color: white;
   padding: 20px 0;
-
 }
+
 
 /* ===============
     ALL: IE Fixes
@@ -204,17 +236,6 @@ nav a:hover {
   text-overflow: ellipsis;
 }
 
-/*.styled-select select {
-   background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-}*/
 
 select {
     -webkit-appearance: button;
@@ -431,36 +452,6 @@ section.select-year {
     margin-left: 1.923076923077%;
   }
 
-  .main article.results-list-item .poster-container {
-    position: relative;
-  }
-
-  .main article.results-list-item .poster-container .view-trailer {
-    display: none;
-  }
-
-  .main article.results-list-item .poster-container:hover .view-trailer {
-    background-color: rgba(241, 196, 15, .8);
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    vertical-align: middle;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .main article.results-list-item .poster-container .view-trailer span {
-    display: block;
-    margin: 95px 10px 0px 10px;
-    font-size: 1em;
-    font-weight: 500;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
 }
 
 /* ==========================================================================
