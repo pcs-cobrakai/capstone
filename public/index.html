@@ -6,7 +6,7 @@
 		<title>And The Nominees Are... | Find academy award nominees by year</title>
 		<link rel="stylesheet" type="text/css" media="all" href="css/normalize.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
-		<link rel="stylesheet" type="text/css" media="all" href="font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="js/fancybox/jquery.fancybox.css">
 		<link rel="stylesheet" type="text/css" media="all" href="js/fancybox/jquery.fancybox-buttons.css">
 		<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css">
@@ -31,23 +31,25 @@
         
         <!-- TEMPLATES -->
         <script type="text/template"   id="main-template">
-	    	<div class="main-container">
-	            <div class="main wrapper clearfix">
-		            <section class="select-year">
-      						<header>View Best Picture Academy Award Nominees Trailers by year</header>
-      						<div class="styled-select">
-      							<select data-placeholder="&nbsp;Year" tabindex="1" id="year">
-      								<option>Please select a year</option>
-      								<!-- options will be added dynamically -->
-      							</select>
-      						</div>
-		            </section>
-		            <section id="results-list" class="results-list">
-			            <!-- results goes here -->
-		            </section>
-	            </div><!--.main .wrapper .clearfix-->
-            </div><!--.main-container-->
-	    </script>
+        	<div class="select-year-hero">
+						<section class="select-year">
+							<header>View Best Picture Academy Award Nominees Trailers by year</header>
+							<div class="styled-select">
+								<select data-placeholder="&nbsp;Year" tabindex="1" id="year">
+									<option>Please select a year</option>
+									<!-- options will be added dynamically -->
+								</select>
+							</div>
+						</section>
+					</div>
+					<div class="main-container">
+						<div class="main wrapper clearfix">
+							<section id="results-list" class="results-list">
+								<!-- results goes here -->
+							</section>
+						</div><!--.main .wrapper .clearfix-->
+					</div><!--.main-container-->
+				</script>
 	    
 	    <script type="text/template"   id="movie-template">
 			<header class="truncate" title="<%= title %>"><%= title %></header>
