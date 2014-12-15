@@ -1,9 +1,8 @@
 var http 		= require("http"),
 	Router  	= require("routes-router"),
 	st 			= require('st'),
-	router 		= Router();
-
-	var config = (process.env.HEROKU)? 
+	router 		= Router(),
+	config 		= (process.env.HEROKU)? 
 	{ 
 		dbKey:     process.env.DBKEY
 	}:
@@ -12,14 +11,24 @@ var http 		= require("http"),
 
 var db = require("orchestrate")(config.dbKey);
 
+var collectionName = "capstoneNew";
 
-// for(key in nominees){ 
-	
-// 	db.put("capstone", key, {
-	
-// 		titles: nominees[key]
-// 	})
-// };
+
+// (function dataPush(){
+
+// 	var nominees = require("./public/nomineeYears.js");
+
+// 	for(key in nominees){ 
+		
+// 		db.put(collectionName, key, {
+		
+// 			titles: nominees[key]
+// 		})
+// 	};
+
+// })();
+
+
 
 
 router.addRoute("/year/:year", {
@@ -28,13 +37,15 @@ router.addRoute("/year/:year", {
 
 		var year = opts.params.year;
 			
-			db.get('capstone', year).then(function (dbRes) {
+			db.get(collectionName, year).then(function (dbRes) {
   				
   				console.log(dbRes.body);
 
   				res.end(JSON.stringify(dbRes.body));
 			
 			}).fail(function (err) {
+
+				res.statusCode = 404;
 				
 				res.end(err);
 			});
