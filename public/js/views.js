@@ -60,6 +60,7 @@ atna.views.movieResults = Backbone.View.extend({
 	initialize: function(data) {
 		this.data = data;
 		this.render();
+		console.log(data)
 		
 		var me = this;
 		
@@ -74,6 +75,7 @@ atna.views.movieResults = Backbone.View.extend({
 				data = data.results[0];
 				
 				if(data) {
+					console.log(data)
 					atna.views.singleView = new atna.views.movieView(data);
 				}
 			});
