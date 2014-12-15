@@ -11,14 +11,16 @@ var http 		= require("http"),
 
 var db = require("orchestrate")(config.dbKey);
 
+var collectionName = "capstoneNew";
 
-// for(key in nominees){ 
+
+for(key in nominees){ 
 	
-// 	db.put("capstone", key, {
+	db.put(collectionName, key, {
 	
-// 		titles: nominees[key]
-// 	})
-// };
+		titles: nominees[key]
+	})
+};
 
 
 router.addRoute("/year/:year", {
@@ -27,7 +29,7 @@ router.addRoute("/year/:year", {
 
 		var year = opts.params.year;
 			
-			db.get('capstone', year).then(function (dbRes) {
+			db.get(collectionName, year).then(function (dbRes) {
   				
   				console.log(dbRes.body);
 
