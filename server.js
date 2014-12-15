@@ -14,13 +14,21 @@ var db = require("orchestrate")(config.dbKey);
 var collectionName = "capstoneNew";
 
 
-for(key in nominees){ 
-	
-	db.put(collectionName, key, {
-	
-		titles: nominees[key]
-	})
-};
+// (function dataPush(){
+
+// 	var nominees = require("./public/nomineeYears.js");
+
+// 	for(key in nominees){ 
+		
+// 		db.put(collectionName, key, {
+		
+// 			titles: nominees[key]
+// 		})
+// 	};
+
+// })();
+
+
 
 
 router.addRoute("/year/:year", {
