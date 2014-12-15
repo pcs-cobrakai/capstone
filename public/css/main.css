@@ -9,9 +9,9 @@ textarea {
 }
 
 html {
-  background-color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background: #222 url(../images/greyzz-header.png);
 }
 
 ::-moz-selection {
@@ -64,7 +64,6 @@ textarea {
 
 body {
   font: 16px/26px "proxima-nova", "Helvetica Neue", Helvetica, Arial;
-  background: #eaeaea;
 }
 
 .wrapper {
@@ -80,19 +79,19 @@ h1, h2, h3, h3, h5, h6 {
     ALL: Orange Theme
    =================== */
 
-.header-container {
-  border-bottom: 20px solid #181818;
-}
-
 .footer-container,
 .main aside {
-  border-top: 20px solid #181818;
+  border-top: 6px solid #181818;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-  background: #222;
+
+}
+
+.header-container {
+  border-bottom: 4px solid #181818;
 }
 
 .title {
@@ -142,6 +141,15 @@ nav a:hover {
     MOBILE: Main
    ============== */
 
+#atna {
+	background: #eaeaea;
+}
+
+.main-container {
+	background-image: url(../images/greyzz.png);
+	background-repeat:repeat;
+}
+
 .main {
   min-height: 350px;
   padding: 30px 0;
@@ -171,6 +179,9 @@ nav a:hover {
 
 .main article.results-list-item header {
   margin-bottom: 5px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+	font-weight: 600;
+  letter-spacing: -0.0225em;
 }
 
 .main article.results-list-item a:link {
@@ -386,9 +397,7 @@ section.select-year {
 
   .header-container,
   .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-       -moz-box-shadow: 0 5px 10px #aaa;
-            box-shadow: 0 5px 10px #aaa;
+
   }
 
 /* ============
