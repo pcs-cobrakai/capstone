@@ -67,11 +67,13 @@ atna.views.movieResults = Backbone.View.extend({
 		$.each(me.data.titles, function(index) {
 			var title = me.data.titles[index];
 			
+			var year = $('select').val();
+			
 			// encode the title for use in the API call
 			var encoded = encodeURIComponent(title);
 			
 			// get the data from the api
-			$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded, function(data) {
+			$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded + '&year=' + year, function(data) {
 				data = data.results[0];
 				
 				if(data) {
@@ -119,7 +121,8 @@ atna.views.movieView = Backbone.View.extend({
 		
 		//fancybox
 		$('.view-trailer').fancybox({
-			padding: 5
+			padding: 5,
+			aspectRatio: true
 		});
 	}
 	
