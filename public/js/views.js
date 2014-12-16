@@ -88,11 +88,6 @@ atna.views.movieResults = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html('');
-		function showMovies() {
-			$('#results-list').fadeIn();
-		}
-		
-		setTimeout(showMovies, 4000);
 	}
 });
 
@@ -114,18 +109,14 @@ atna.views.movieView = Backbone.View.extend({
 		this.data = data;
 		var that = this;
 		$.getJSON(atna.helpers.movieURL + this.data.id + '?api_key=' + atna.helpers.apiKey + '&append_to_response=trailers', function(trailerData) {
+			that.movieInfo = {
+				title: that.data.title,
+				poster: atna.helpers.mainURL + that.data.poster_path,
+			}
 			if(trailerData.trailers.youtube[0]) {
-				that.movieInfo = {
-					title: that.data.title,
-					poster: atna.helpers.mainURL + that.data.poster_path,
-					trailer_id: trailerData.trailers.youtube[0].source
-				}
+				that.movieInfo.trailer_id = trailerData.trailers.youtube[0].source
 			} else {
-				that.movieInfo = {
-					title: that.data.title,
-					poster: atna.helpers.mainURL + that.data.poster_path,
-					trailer_id: 0
-				}
+				that.movieInfo.trailer_id = 0
 			}
 			
 			
