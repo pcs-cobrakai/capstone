@@ -605,3 +605,7 @@ img.winner {
     page-break-after: avoid;
   }
 }
+
+#results-list {
+	display: none;
+}

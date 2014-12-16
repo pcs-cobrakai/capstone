@@ -21,7 +21,7 @@ atna.views.atna = Backbone.View.extend({
 			$.get('/year/' + $(this).val(), function(data) {
 				var dataObject = JSON.parse(data);
 				
-				// render our results view
+				// create instance of our results view
 				atna.views.resultsView = new atna.views.movieResults(dataObject);
 			});
 		});
@@ -60,7 +60,7 @@ atna.views.movieResults = Backbone.View.extend({
 	initialize: function(data) {
 		this.data = data;
 		this.render();
-		console.log(data)
+		console.log(data);
 		
 		var me = this;
 		
@@ -77,15 +77,22 @@ atna.views.movieResults = Backbone.View.extend({
 				data = data.results[0];
 				
 				if(data) {
-					console.log(data)
+					console.log(data);
 					atna.views.singleView = new atna.views.movieView(data);
 				}
 			});
+			
 		});
+		
 	},
 
 	render: function() {
 		this.$el.html('');
+		function showMovies() {
+			$('#results-list').fadeIn();
+		}
+		
+		setTimeout(showMovies, 4000);
 	}
 });
 
@@ -107,11 +114,21 @@ atna.views.movieView = Backbone.View.extend({
 		this.data = data;
 		var that = this;
 		$.getJSON(atna.helpers.movieURL + this.data.id + '?api_key=' + atna.helpers.apiKey + '&append_to_response=trailers', function(trailerData) {
-			that.movieInfo = {
-				title: that.data.title,
-				poster: atna.helpers.mainURL + that.data.poster_path,
-				trailer_id: trailerData.trailers.youtube[0].source
+			if(trailerData.trailers.youtube[0]) {
+				that.movieInfo = {
+					title: that.data.title,
+					poster: atna.helpers.mainURL + that.data.poster_path,
+					trailer_id: trailerData.trailers.youtube[0].source
+				}
+			} else {
+				that.movieInfo = {
+					title: that.data.title,
+					poster: atna.helpers.mainURL + that.data.poster_path,
+					trailer_id: 0
+				}
 			}
+			
+			
 			that.render();
 		});
 	},
@@ -119,7 +136,7 @@ atna.views.movieView = Backbone.View.extend({
 	render: function() {
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
 		
-		//fancybox
+		// fancybox
 		$('.view-trailer').fancybox({
 			padding: 5,
 			aspectRatio: true
