@@ -37,7 +37,7 @@ audio,
 canvas,
 img,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 fieldset {
@@ -79,9 +79,8 @@ h1, h2, h3, h3, h5, h6 {
     ALL: Orange Theme
    =================== */
 
-.footer-container,
-.main aside {
-  border-top: 6px solid #181818;
+.footer-container {
+  border-top: 2px solid #cab751;
 }
 
 .header-container,
@@ -91,13 +90,14 @@ h1, h2, h3, h3, h5, h6 {
 }
 
 .header-container {
-  border-bottom: 4px solid #181818;
+  border-bottom: 1px solid #707070;
 }
 
 .title {
-  color: white;
+  color: #cab751;
   font-weight: 300;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: -0.018em;
 }
 
 .sub-title {
@@ -148,6 +148,7 @@ nav a:hover {
 .main-container {
 	background-image: url(../images/greyzz.png);
 	background-repeat:repeat;
+  border-top: 2px solid #ddd
 }
 
 .main {
@@ -200,6 +201,8 @@ nav a:hover {
 
 .main article.results-list-item .poster-container:hover .view-trailer {
   background-color: rgba(241, 196, 15, .8);
+  background-color: #cab751;
+  background-color: rgba(202, 183, 81, .8);
   color: #fff;
   cursor: pointer;
   display: block;
@@ -211,6 +214,10 @@ nav a:hover {
   vertical-align: middle;
   width: 100%;
   z-index: 999;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .main article.results-list-item .poster-container .view-trailer span {
@@ -249,31 +256,31 @@ nav a:hover {
 
 
 select {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -webkit-padding-end: 20px;
-    -moz-padding-end: 20px;
-    -webkit-padding-start: 2px;
-    -moz-padding-start: 2px;
-    background-color: #F07575; /* fallback color if gradients are not supported */
-    background-position: center right;
-    background-repeat: no-repeat;
-    border: 3px solid #fff;
-    border-radius: 2px;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
-    color: #555;
-    font-size: inherit;
-    margin: 0;
-    overflow: hidden;
-    padding: 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 300px;
-    position: relative;
-    box-sizing: border-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #F07575; /* fallback color if gradients are not supported */
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 3px solid #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .select-year-hero {
@@ -281,17 +288,26 @@ select {
 	padding: 50px 0 30px 0;
 }
 
+
+.select-year-hero {
+  width: 100%;
+  height: 100%;
+  background-color: #cab751;
+  background-image: linear-gradient(to bottom right, #cab751, #c8c4ae);
+}
+
+
 .select-year {
   min-height: 130px;
 }
 
 .select-year header {
-    font-size: 1.6em;
-    color: #333;
-    margin-bottom: 20px;
-    letter-spacing: -0.0325em;
-    font-weight: 400;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: -0.0325em;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 section.select-year {
@@ -303,7 +319,7 @@ section.select-year {
   width: 280px;
   background-color: white;
   padding: 6px 10px;
-  border: 2px solid #b7bfcf;
+  border: 2px solid #ddd;
   background: url(../images/select-box-bg.gif?ver=3) right center;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -317,18 +333,18 @@ section.select-year {
 }
 
 .select-year .customSelect.customSelectHover {
-  border-color: #aeb7c9;
+  border-color: #ccc;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
 }
 
 .select-year .customSelect.customSelectFocus {
-  border-color: #996633;
+  border-color: #ccc;
 }
 
 .select-year .customSelect.customSelectOpen {
-  border-color: #5d5074;
+  border-color: #ccc;
   background: url(../images/select-box-bg-on.gif?ver=3) right center;
   background-repeat: no-repeat;
 }
