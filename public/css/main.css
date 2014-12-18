@@ -225,7 +225,7 @@ nav a:hover {
 
 .main article.results-list-item .poster-container .view-trailer span {
   display: block;
-  margin: 95px 10px 0px 10px;
+  margin: 62% 10px 0px 10px;
   font-size: 1em;
   font-weight: 500;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
@@ -406,6 +406,11 @@ section.select-year {
     margin-right: 0;
   }
 
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1em;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -460,6 +465,11 @@ section.select-year {
     width: 28%;
   }
 
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1.2em;
+  }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -496,6 +506,10 @@ section.select-year {
     height: 100%;
   }
 
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 70% 10px 0px 10px;
+    font-size: 1.2em;
+  }
 
 }
 
