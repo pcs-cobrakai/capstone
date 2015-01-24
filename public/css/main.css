@@ -167,15 +167,18 @@ nav a:hover {
 
 .main section.results-list {
   float: left;
-  margin-left: -3%;
   margin-bottom: 2em;
 }
 
 .main article.results-list-item {
   float: left;
   width: 47%;
-  margin-left: 3%;
-  margin-bottom: 2em;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+
+.main article.results-list-item:nth-child(2n+2) {
+  margin-right: 0;
 }
 
 .main article.results-list-item header {
@@ -196,33 +199,33 @@ nav a:hover {
 }
 
 .main article.results-list-item .poster-container .view-trailer {
-  display: none;
-}
-
-.main article.results-list-item .poster-container:hover .view-trailer {
-  background-color: rgba(241, 196, 15, .8);
-  background-color: #cab751;
-  background-color: rgba(202, 183, 81, .8);
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   cursor: pointer;
-  display: block;
+  display: none;
   height: 100%;
   left: 0;
   position: absolute;
   text-align: center;
   top: 0;
+  transition: background-color 0.35s ease 0s,
+              display 0.35s ease 0s;
   vertical-align: middle;
   width: 100%;
   z-index: 999;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+}
+
+.main article.results-list-item .poster-container:hover .view-trailer {
+  display: block;
+}
+
+.main article.results-list-item .poster-container .view-trailer:hover {
+  background-color: rgba(202, 183, 81, .8);
 }
 
 .main article.results-list-item .poster-container .view-trailer span {
   display: block;
-  margin: 95px 10px 0px 10px;
+  margin: 62% 10px 0px 10px;
   font-size: 1em;
   font-weight: 500;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
@@ -389,16 +392,25 @@ section.select-year {
     margin: 0 0.7%;
   }
 
-  .main section.results-list {
-    float: left;
-    margin-left: -3%;
-  }
-
   .main article.results-list-item {
     float: left;
-    width: 22%;
-    margin-left: 3%;
+    width: 30%;
+    margin-right: 5%;
   }
+
+  .main article.results-list-item:nth-child(2n+2) {
+    margin-right: 5%;
+  }
+
+  .main article.results-list-item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1em;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -434,21 +446,30 @@ section.select-year {
     width: 57%;
   }
 
-  .main section.results-list {
-    float: left;
-    margin-left: -2.5%;
-  }
-
   .main article.results-list-item {
     float: left;
-    width: 17.5%;
-    margin-left: 2.5%;
+    width: 23.125%;
+    margin-right: 2.5%;
+  }
+
+  .main article.results-list-item:nth-child(3n+3), .main article.results-list-item:nth-child(2n+2) {
+    margin-right: 2.5%;
+  }
+
+  .main article.results-list-item:nth-child(4n+4) {
+    margin-right: 0;
   }
 
   .main aside {
     float: right;
     width: 28%;
   }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1.2em;
+  }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -462,15 +483,32 @@ section.select-year {
     margin: 0 auto;
   }
 
-  .main section.results-list {
-    float: left;
-    margin-left: -1.923076923077%;
-  }
-
   .main article.results-list-item {
     float: left;
-    width: 14.74%;
-    margin-left: 1.923076923077%;
+    width: 240px;
+  }
+
+  .main article.results-list-item:nth-child(4n+4), .main article.results-list-item:nth-child(3n+3), .main article.results-list-item:nth-child(2n+2), .main article.results-list-item:nth-child(1n+1)  {
+    margin-right: 15px;
+  }
+
+  .main article.results-list-item:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .main article.results-list-item .poster-container {
+    position: relative;
+    width: 240px;
+    height: 361px;
+  }
+
+  .poster-container img.thumbnail {
+    height: 100%;
+  }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 70% 10px 0px 10px;
+    font-size: 1.2em;
   }
 
 }
