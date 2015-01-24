@@ -42,7 +42,7 @@ atna.views.atna = Backbone.View.extend({
 		// have jquery create our option dropdowns
 		var year = $('#year');
 		
-		for(var count = 2013; count >= 1928; --count) {
+		for(var count = 2014; count >= 1928; --count) {
 			$('<option>' + count + '</option>').appendTo(year);
 		}
 	}
