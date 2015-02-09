@@ -88,7 +88,7 @@ atna.views.movieResults = Backbone.View.extend({
 				}
 
 				if(data) {
-					console.log(data, "API DATA");
+					
 					atna.views.singleView = new atna.views.movieView(data);
 				}
 			});
