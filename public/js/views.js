@@ -60,7 +60,7 @@ atna.views.movieResults = Backbone.View.extend({
 	initialize: function(data) {
 		this.data = data;
 		this.render();
-		console.log(data);
+		console.log(data, 'DATA');
 		
 		var me = this;
 		
@@ -68,16 +68,27 @@ atna.views.movieResults = Backbone.View.extend({
 			var title = me.data.titles[index];
 			
 			var year = $('select').val();
-			
+			var misYear = year - 1;
+
 			// encode the title for use in the API call
 			var encoded = encodeURIComponent(title);
-			
 			// get the data from the api
 			$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded + '&year=' + year, function(data) {
 				data = data.results[0];
 				
+				if(!data){
+
+					$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded + '&year=' + misYear, function(data) {
+						data = data.results[0];
+						
+						console.log(data, "API NO DATA");
+						atna.views.singleView = new atna.views.movieView(data);
+					})
+					
+				}
+
 				if(data) {
-					console.log(data);
+					
 					atna.views.singleView = new atna.views.movieView(data);
 				}
 			});
@@ -107,6 +118,7 @@ atna.views.movieView = Backbone.View.extend({
 	
 	initialize: function(data) {
 		this.data = data;
+		console.log(data, "movieView DATA")
 		var that = this;
 		$.getJSON(atna.helpers.movieURL + this.data.id + '?api_key=' + atna.helpers.apiKey + '&append_to_response=trailers', function(trailerData) {
 			that.movieInfo = {
