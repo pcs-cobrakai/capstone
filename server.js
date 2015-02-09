@@ -11,7 +11,7 @@ var http 		= require("http"),
 
 var db = require("orchestrate")(config.dbKey);
 
-var collectionName = "capstoneNew";
+var collectionName = "capstone";
 
 
 // (function dataPush(){
