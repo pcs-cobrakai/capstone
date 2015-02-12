@@ -60,7 +60,7 @@ atna.views.movieResults = Backbone.View.extend({
 	initialize: function(data) {
 		this.data = data;
 		this.render();
-		console.log(data, 'DATA');
+		// console.log(data, 'DATA');
 		
 		var me = this;
 		
@@ -81,7 +81,7 @@ atna.views.movieResults = Backbone.View.extend({
 					$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded + '&year=' + misYear, function(data) {
 						data = data.results[0];
 						
-						console.log(data, "API NO DATA");
+						// console.log(data, "API NO DATA");
 						atna.views.singleView = new atna.views.movieView(data);
 					})
 					
@@ -126,6 +126,7 @@ atna.views.movieView = Backbone.View.extend({
 				poster: atna.helpers.mainURL + that.data.poster_path,
 			}
 			if(trailerData.trailers.youtube[0]) {
+				console.log(data, "Trailer")
 				that.movieInfo.trailer_id = trailerData.trailers.youtube[0].source
 			} else {
 				that.movieInfo.trailer_id = 0
@@ -141,7 +142,7 @@ atna.views.movieView = Backbone.View.extend({
 		
 		// fancybox
 		$('.view-trailer').fancybox({
-			padding: 5,
+			padding: 3,
 			aspectRatio: true
 		});
 	}
