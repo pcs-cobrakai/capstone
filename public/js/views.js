@@ -42,7 +42,7 @@ atna.views.atna = Backbone.View.extend({
 		// have jquery create our option dropdowns
 		var year = $('#year');
 		
-		for(var count = 2014; count >= 1928; --count) {
+		for(var count = 2015; count >= 1928; --count) {
 			$('<option>' + count + '</option>').appendTo(year);
 		}
 	}
@@ -60,7 +60,6 @@ atna.views.movieResults = Backbone.View.extend({
 	initialize: function(data) {
 		this.data = data;
 		this.render();
-		// console.log(data, 'DATA');
 		
 		var me = this;
 		
@@ -81,7 +80,7 @@ atna.views.movieResults = Backbone.View.extend({
 					$.getJSON(atna.helpers.searchURL + atna.helpers.apiKey + '&query=' + encoded + '&year=' + misYear, function(data) {
 						data = data.results[0];
 						
-						// console.log(data, "API NO DATA");
+						
 						atna.views.singleView = new atna.views.movieView(data);
 					})
 					
@@ -118,7 +117,7 @@ atna.views.movieView = Backbone.View.extend({
 	
 	initialize: function(data) {
 		this.data = data;
-		console.log(data, "movieView DATA")
+
 		var that = this;
 		$.getJSON(atna.helpers.movieURL + this.data.id + '?api_key=' + atna.helpers.apiKey + '&append_to_response=trailers', function(trailerData) {
 			that.movieInfo = {
@@ -126,7 +125,7 @@ atna.views.movieView = Backbone.View.extend({
 				poster: atna.helpers.mainURL + that.data.poster_path,
 			}
 			if(trailerData.trailers.youtube[0]) {
-				console.log(data, "Trailer")
+
 				that.movieInfo.trailer_id = trailerData.trailers.youtube[0].source
 			} else {
 				that.movieInfo.trailer_id = 0
@@ -140,11 +139,14 @@ atna.views.movieView = Backbone.View.extend({
 	render: function() {
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
 		
-		// fancybox
+		//fancybox
 		$('.view-trailer').fancybox({
 			padding: 3,
-			aspectRatio: true
+			aspectRatio: true,
+			afterLoad: function(){console.log(this, "THIS")}
 		});
+
+
 	}
 	
 });

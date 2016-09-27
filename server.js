@@ -14,19 +14,19 @@ var db = require("orchestrate")(config.dbKey);
 var collectionName = "capstone";
 
 
-// (function dataPush(){
+(function dataPush(){
 
-// 	var nominees = require("./public/nomineeYears.js");
+	var nominees = require("./public/nomineeYears.js");
 
-// 	for(key in nominees){ 
+	for(key in nominees){ 
 		
-// 		db.put(collectionName, key, {
+		db.put(collectionName, key, {
 		
-// 			titles: nominees[key]
-// 		})
-// 	};
+			titles: nominees[key]
+		})
+	};
 
-// })();
+})();
 
 
 
