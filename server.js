@@ -31,26 +31,26 @@ var collectionName = "capstone";
 
 
 
-router.addRoute("/year/:year", {
+// router.addRoute("/year/:year", {
 
-	GET: function(req, res, opts){
+// 	GET: function(req, res, opts){
 
-		var year = opts.params.year;
+// 		var year = opts.params.year;
 			
-			db.get(collectionName, year).then(function (dbRes) {
+// 			db.get(collectionName, year).then(function (dbRes) {
   				
-  				console.log(dbRes.body);
+//   				console.log(dbRes.body);
 
-  				res.end(JSON.stringify(dbRes.body));
+//   				res.end(JSON.stringify(dbRes.body));
 			
-			}).fail(function (err) {
+// 			}).fail(function (err) {
 
-				res.statusCode = 404;
+// 				res.statusCode = 404;
 				
-				res.end(err);
-			});
-	}
-})
+// 				res.end(err);
+// 			});
+// 	}
+// })
 
 
 router.addRoute("/*", st({
