@@ -47,7 +47,7 @@ $.getJSON('/year/1980', function(data) {
 	
 	
 	
-	// api config url: http://api.themoviedb.org/3/configuration?api_key=da1213cb709d4b012442e39d58ec6234
+	// api config url: https://api.themoviedb.org/3/configuration?api_key=da1213cb709d4b012442e39d58ec6234
 	// example url: https://api.themoviedb.org/3/search/movie?api_key=da1213cb709d4b012442e39d58ec6234&query=interstellar
 	
 	// use both the config and the example url to piece together images and such...
