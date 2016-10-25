@@ -142,8 +142,7 @@ atna.views.movieView = Backbone.View.extend({
 		//fancybox
 		$('.view-trailer').fancybox({
 			padding: 3,
-			aspectRatio: true,
-			afterLoad: function(){console.log(this, "THIS")}
+			aspectRatio: true
 		});
 
 
