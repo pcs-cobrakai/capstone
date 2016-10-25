@@ -267,7 +267,7 @@ select {
   -moz-padding-end: 20px;
   -webkit-padding-start: 2px;
   -moz-padding-start: 2px;
-  background-color: #F07575; /* fallback color if gradients are not supported */
+  background-color: #CDCDCD; /* fallback color if gradients are not supported */
   background-position: center right;
   background-repeat: no-repeat;
   border: 3px solid #fff;
