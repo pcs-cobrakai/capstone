@@ -138,14 +138,101 @@ atna.views.movieView = Backbone.View.extend({
 	
 	render: function() {
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
-		
+		var iframeDiv = $('.iframe_div');
 		//fancybox
 		$('.view-trailer').fancybox({
 			padding: 3,
-			aspectRatio: true
+			aspectRatio: true,
+			afterShow:function(){
+				var fancyWidth = $('.fancybox-inner').width();
+				var fancyHeight = $('.fancybox-inner').height();
+				
+				console.log('width', fancyWidth);
+				console.log('height', fancyHeight);
+				var iframe = $('#fancy_iframe');
+				iframe.css({ 'width': fancyWidth + 'px'});
+				iframe.css({ 'height': fancyHeight + 'px'});
+				console.log('iframe width', iframe.width())
+				console.log('iframe height', iframe.height())
+				
+			}
+			
 		});
+
+		// this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
+		
+		// //fancybox
+		// $('.view-trailer').fancybox({
+		// 	padding: 3,
+		// 	aspectRatio: true
+		// });
+
+
+
 
 
 	}
 	
 });
+
+
+
+$(window).load(function(){
+	
+	
+
+
+
+	// var windowHeight = $(window).height(), winWidth = $(window).width();
+
+	
+	// if(winWidth>768)
+	// {
+		
+	// }
+
+	// if(winWidth<768)
+	// {
+		//width="640" height="390"  from the index page for the iframe
+		
+	
+	// }
+
+	// else if(winWidth>1850)
+	// {
+		
+	// }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
