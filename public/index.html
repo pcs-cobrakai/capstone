@@ -58,8 +58,8 @@
 				<a class="view-trailer" href="#trailer-<%= trailer_id %>"><span>View Trailer</span></a>
 			</div><!--.poster-container-->
 			<footer><!-- Other content will go here --></footer>
-			<div id="trailer-<%= trailer_id %>" style="display: none;">
-				<iframe width="640" height="390" frameborder="0" title="YouTube video player" type="text/html" src="https://www.youtube.com/embed/<%= trailer_id %>?enablejsapi=1"></iframe>
+			<div class="iframe_div" id="trailer-<%= trailer_id %>" style="display: none;">
+				<iframe id="fancy_iframe" frameborder="0" title="YouTube video player" type="text/html" src="https://www.youtube.com/embed/<%= trailer_id %>?enablejsapi=1"></iframe>
 			</div>
 	    </script>
 		

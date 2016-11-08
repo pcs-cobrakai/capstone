@@ -352,7 +352,10 @@ section.select-year {
   background-repeat: no-repeat;
 }
 
-
+.fancy_frame{
+  width: 640px; 
+  height:390px;
+}
 
 /* ==========================================================================
    Media Queries
