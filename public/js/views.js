@@ -146,9 +146,15 @@ atna.views.movieView = Backbone.View.extend({
 			afterShow:function(){
 				var fancyWidth = $('.fancybox-inner').width();
 				var fancyHeight = $('.fancybox-inner').height();
+				
+				console.log('width', fancyWidth);
+				console.log('height', fancyHeight);
 				var iframe = $('#fancy_iframe');
 				iframe.css({ 'width': fancyWidth + 'px'});
 				iframe.css({ 'height': fancyHeight + 'px'});
+				console.log('iframe width', iframe.width())
+				console.log('iframe height', iframe.height())
+				
 			}
 			
 		});
