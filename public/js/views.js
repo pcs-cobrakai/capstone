@@ -138,7 +138,9 @@ atna.views.movieView = Backbone.View.extend({
 	
 	render: function() {
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
-		var iframeDiv = $('.iframe_div');
+		var iframeDiv = $('.iframe_div'), iframe = $('#fancy_iframe');
+		iframe.css({ 'width': '640px'});
+		iframe.css({ 'height': '390px'});
 		//fancybox
 		$('.view-trailer').fancybox({
 			padding: 3,
@@ -146,30 +148,16 @@ atna.views.movieView = Backbone.View.extend({
 			afterShow:function(){
 				var fancyWidth = $('.fancybox-inner').width();
 				var fancyHeight = $('.fancybox-inner').height();
-				
-				console.log('width', fancyWidth);
-				console.log('height', fancyHeight);
-				var iframe = $('#fancy_iframe');
+				// console.log('width', fancyWidth);
+				// console.log('height', fancyHeight);				
 				iframe.css({ 'width': fancyWidth + 'px'});
 				iframe.css({ 'height': fancyHeight + 'px'});
-				console.log('iframe width', iframe.width())
-				console.log('iframe height', iframe.height())
+				// console.log('iframe width', iframe.width())
+				// console.log('iframe height', iframe.height())
 				
 			}
 			
 		});
-
-		// this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
-		
-		// //fancybox
-		// $('.view-trailer').fancybox({
-		// 	padding: 3,
-		// 	aspectRatio: true
-		// });
-
-
-
-
 
 	}
 	
