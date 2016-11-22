@@ -4,7 +4,7 @@
 |----------------------------------------------------------
 *
 */
-
+var movieIdList = [];
 
 // ===== main view =====
 
@@ -127,71 +127,67 @@ atna.views.movieView = Backbone.View.extend({
 			if(trailerData.trailers.youtube[0]) {
 
 				that.movieInfo.trailer_id = trailerData.trailers.youtube[0].source
+
 			} else {
 				that.movieInfo.trailer_id = 0
-			}
-			
-			
+			}			
+
 			that.render();
+
 		});
 	},
 	
 	render: function() {
+		
 		this.$el.html(this.template(this.movieInfo)).appendTo('#results-list');
-		var iframeDiv = $('.iframe_div'), iframe = $('#fancy_iframe');
-		iframe.css({ 'width': '640px'});
-		iframe.css({ 'height': '390px'});
+		
+		var video_id = this.movieInfo.trailer_id, 
+			iframeDiv = $('.iframe_div'), 
+			iframe = $('#iframe-'+video_id),
+			windowHeight = $(window).height(), 
+			winWidth = $(window).width();
+
+				if(winWidth<768)
+				{
+					var fancyWidth = $('.fancybox-inner').width();
+					var fancyHeight = $('.fancybox-inner').height();
+					iframe.css({ 'width': fancyWidth + 'px'});
+					iframe.css({ 'height': fancyHeight + 'px'});
+				}
+				else
+				{
+					iframe.css({ 'width': '640px'});
+					iframe.css({ 'height': '390px'});
+				}
 		//fancybox
 		$('.view-trailer').fancybox({
 			padding: 3,
-			aspectRatio: true,
-			afterShow:function(){
-				var fancyWidth = $('.fancybox-inner').width();
-				var fancyHeight = $('.fancybox-inner').height();
-				// console.log('width', fancyWidth);
-				// console.log('height', fancyHeight);				
-				iframe.css({ 'width': fancyWidth + 'px'});
-				iframe.css({ 'height': fancyHeight + 'px'});
-				// console.log('iframe width', iframe.width())
-				// console.log('iframe height', iframe.height())
-				
-			}
-			
+			aspectRatio: true
 		});
 
 	}
+
 	
 });
 
+// $(window).load(function(){
+	
+	// afterShow:function(){
 
-
-$(window).load(function(){
+				
+	// 		}
 	
 	
-
-
-
-	// var windowHeight = $(window).height(), winWidth = $(window).width();
+	// 	<iframe id="fancy_iframe"
 
 	
-	// if(winWidth>768)
-	// {
-		
-	// }
-
-	// if(winWidth<768)
-	// {
-		//width="640" height="390"  from the index page for the iframe
-		
-	
-	// }
 
 	// else if(winWidth>1850)
 	// {
 		
 	// }
 
-})
+// })
 
 
 
