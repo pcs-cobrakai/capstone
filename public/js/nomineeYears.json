@@ -1,0 +1,1060 @@
+{
+  "count" : 88,
+  "results" : [ {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1928",
+      "ref" : "451b63289d183729",
+      "reftime" : 1474946530728
+    },
+    "value" : {
+      "titles" : [ "Wings", "The Racket", "7th Heaven" ]
+    },
+    "reftime" : 1474946530728
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1929",
+      "ref" : "6dd91a6b2af3ba72",
+      "reftime" : 1474946530696
+    },
+    "value" : {
+      "titles" : [ "The Broadway Melody", "Alibi", "The Hollywood Revue of 1929", "In Old Arizona", "The Patriot" ]
+    },
+    "reftime" : 1474946530696
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1930",
+      "ref" : "2314020c932bbcfa",
+      "reftime" : 1474946530719
+    },
+    "value" : {
+      "titles" : [ "All Quiet on the Western Front", "The Big House", "Disraeli", "The Divorcee", "The Love Parade" ]
+    },
+    "reftime" : 1474946530719
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1931",
+      "ref" : "05705e22e9ae285a",
+      "reftime" : 1474946530733
+    },
+    "value" : {
+      "titles" : [ "Cimarron", "East Lynne", "The Front Page", "Skippy", "Trader Horn" ]
+    },
+    "reftime" : 1474946530733
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1932",
+      "ref" : "f3a61e9306bdc588",
+      "reftime" : 1474946530699
+    },
+    "value" : {
+      "titles" : [ "Grand Hotel", "Arrowsmith", "Bad Girl", "The Champ", "Five Star Final", "One Hour with You", "Shanghai Express", "The Smiling Lieutenant" ]
+    },
+    "reftime" : 1474946530699
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1933",
+      "ref" : "55e0616e640cadc3",
+      "reftime" : 1474946531136
+    },
+    "value" : {
+      "titles" : [ "Cavalcade", "42nd Street", "A Farewell to Arms", "I Am a Fugitive from a Chain Gang", "Lady for a Day", "Little Women", "The Private Life of Henry VIII", "She Done Him Wrong", "Smilin' Through", "State Fair" ]
+    },
+    "reftime" : 1474946531136
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1934",
+      "ref" : "55c59769234ece56",
+      "reftime" : 1474946531137
+    },
+    "value" : {
+      "titles" : [ "It Happened One Night", "The Barretts of Wimpole Street", "Cleopatra", "Flirtation Walk", "The Gay Divorcee", "Here Comes the Navy", "The House of Rothschild", "Imitation of Life", "One Night of Love", "The Thin Man", "Viva Villa!", "The White Parade" ]
+    },
+    "reftime" : 1474946531137
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1935",
+      "ref" : "a043bdcccbca1f82",
+      "reftime" : 1474946531153
+    },
+    "value" : {
+      "titles" : [ "Mutiny on the Bounty", "Alice Adams", "Broadway Melody of 1936", "Captain Blood", "David Copperfield", "The Informer", "The Lives of a Bengal Lancer", "A Midsummer Night's Dream", "Les Miserables", "Naughty Marietta", "Ruggles of Red Gap", "Top Hat" ]
+    },
+    "reftime" : 1474946531153
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1936",
+      "ref" : "89d4d30149f9d7ff",
+      "reftime" : 1474946531169
+    },
+    "value" : {
+      "titles" : [ "The Great Ziegfeld", "Anthony Adverse", "Dodsworth", "Libeled Lady", "Mr. Deeds Goes to Town", "Romeo and Juliet", "San Francisco", "The Story of Louis Pasteur", "A Tale of Two Cities", "Three Smart Girls" ]
+    },
+    "reftime" : 1474946531169
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1937",
+      "ref" : "31ffa6d14c545d52",
+      "reftime" : 1474946531161
+    },
+    "value" : {
+      "titles" : [ "The Life of Emile Zola", "The Awful Truth", "Captains Courageous", "Dead End", "The Good Earth", "In Old Chicago", "Lost Horizon", "One Hundred Men and a Girl", "Stage Door", "A Star is Born" ]
+    },
+    "reftime" : 1474946531161
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1938",
+      "ref" : "454f24fec53a332a",
+      "reftime" : 1474946531561
+    },
+    "value" : {
+      "titles" : [ "You Can't Take It With You", "The Adventures of Robin Hood", "Alexander's Ragtime Band", "Boys Town", "The Citadel", "Four Daughters", "Grand Illusion", "Jezebel", "Pygmalion", "Test Pilot" ]
+    },
+    "reftime" : 1474946531561
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1939",
+      "ref" : "070aca177ad7d49c",
+      "reftime" : 1474946531564
+    },
+    "value" : {
+      "titles" : [ "Gone with the Wind", "Dark Victory", "Goodbye Mr. Chips", "Love Affair", "Mr. Smith Goes to Washington", "Ninotchka", "Of Mice and Men", "Stagecoach", "The Wizard of Oz", "Wuthering Heights" ]
+    },
+    "reftime" : 1474946531564
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1940",
+      "ref" : "03e68224e72f97de",
+      "reftime" : 1474946531545
+    },
+    "value" : {
+      "titles" : [ "Rebecca", "All This, and Heaven Too", "Foreign Correspondent", "The Grapes of Wrath", "The Great Dictator", "Kitty Foyle", "The Letter", "The Long Voyage Home", "Our Town", "The Philadelphia Story" ]
+    },
+    "reftime" : 1474946531545
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1941",
+      "ref" : "e6274beb72a27374",
+      "reftime" : 1474946531582
+    },
+    "value" : {
+      "titles" : [ "How Green Was My Valley", "Blossoms in the Dust", "Citizen Kane", "Here Comes Mr. Jordan", "Hold Back the Dawn", "The Little Foxes", "The Maltese Falcon", "One Foot in Heaven", "Sergeant York", "Suspicion" ]
+    },
+    "reftime" : 1474946531582
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1942",
+      "ref" : "8067c9d7338e1aa9",
+      "reftime" : 1474946531583
+    },
+    "value" : {
+      "titles" : [ "Mrs. Miniver", "The Invaders", "Kings Row", "The Magnificent Ambersons", "The Pied Piper", "The Pride of the Yankees", "Random Harvest", "The Talk of the Town", "Wake Island", "Yankee Doodle Dandy" ]
+    },
+    "reftime" : 1474946531583
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1943",
+      "ref" : "09c373df8a91e08d",
+      "reftime" : 1474946531977
+    },
+    "value" : {
+      "titles" : [ "Casablanca", "For Whom The Bell Tolls", "Heaven Can Wait", "The Human Comedy", "In Which We Serve", "Madame Curie", "The More the Merrier", "The Ox-Bow Incident", "The Song of Bernadette", "Watch on the Rhine" ]
+    },
+    "reftime" : 1474946531977
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1944",
+      "ref" : "4a98a61b34cd2f3d",
+      "reftime" : 1474946531979
+    },
+    "value" : {
+      "titles" : [ "Going My Way", "Double Indemnity", "Gaslight", "Since You Went Away", "Wilson" ]
+    },
+    "reftime" : 1474946531979
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1945",
+      "ref" : "6e5eb19b0f4fb967",
+      "reftime" : 1474946531960
+    },
+    "value" : {
+      "titles" : [ "The Lost Weekend", "Anchors Aweigh", "The Bells of St. Mary's", "Mildred Pierce", "Spellbound" ]
+    },
+    "reftime" : 1474946531960
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1946",
+      "ref" : "406af9548fd787b2",
+      "reftime" : 1474946532021
+    },
+    "value" : {
+      "titles" : [ "The Best Years of Our Lives", "Henry V", "It's a Wonderful Life", "The Razor's Edge", "The Yearling" ]
+    },
+    "reftime" : 1474946532021
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1947",
+      "ref" : "463a29b3ab6e9ea9",
+      "reftime" : 1474946532040
+    },
+    "value" : {
+      "titles" : [ "Gentleman's Agreement", "The Bishop's Wife", "Crossfire", "Great Expectations", "Miracle on 34th Street" ]
+    },
+    "reftime" : 1474946532040
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1948",
+      "ref" : "fb63facdfc9d3703",
+      "reftime" : 1474946532378
+    },
+    "value" : {
+      "titles" : [ "Hamlet", "Johnny Belinda", "The Red Shoes", "The Snake Pit", "The Treasure of the Sierra Madre" ]
+    },
+    "reftime" : 1474946532378
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1949",
+      "ref" : "4d48ee18e7cf04ee",
+      "reftime" : 1474946532389
+    },
+    "value" : {
+      "titles" : [ "All the King's Men", "Battleground", "The Heiress", "A Letter to Three Wives", "Twelve O'Clock High" ]
+    },
+    "reftime" : 1474946532389
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1950",
+      "ref" : "eba1d322ae570e19",
+      "reftime" : 1474946532391
+    },
+    "value" : {
+      "titles" : [ "All About Eve", "Born Yesterday", "Father of the Bride", "King Solomon's Mines", "Sunset Boulevard" ]
+    },
+    "reftime" : 1474946532391
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1951",
+      "ref" : "734976e219d39dd7",
+      "reftime" : 1474946532427
+    },
+    "value" : {
+      "titles" : [ "An American in Paris", "Decision Before Dawn", "A Place in the Sun", "Quo Vadis", "A Streetcar Named Desire" ]
+    },
+    "reftime" : 1474946532427
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1952",
+      "ref" : "297ba8b3f94848f6",
+      "reftime" : 1474946532477
+    },
+    "value" : {
+      "titles" : [ "The Greatest Show on Earth", "High Noon", "Ivanhoe", "Moulin Rouge", "The Quiet Man" ]
+    },
+    "reftime" : 1474946532477
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1953",
+      "ref" : "e63197da39c0d364",
+      "reftime" : 1474946532888
+    },
+    "value" : {
+      "titles" : [ "From Here to Eternity", "Julius Caesar", "The Robe", "Roman Holiday", "Shane" ]
+    },
+    "reftime" : 1474946532888
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1954",
+      "ref" : "d0488aaf279b1a3d",
+      "reftime" : 1474946532897
+    },
+    "value" : {
+      "titles" : [ "On the Waterfront", "The Caine Mutiny", "The Country Girl", "Seven Brides for Seven Brothers", "Three Coins in the Fountain" ]
+    },
+    "reftime" : 1474946532897
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1955",
+      "ref" : "2d3f7ed92911d120",
+      "reftime" : 1474946532901
+    },
+    "value" : {
+      "titles" : [ "Marty", "Love Is a Many Splendored Thing", "Mister Roberts", "Picnic", "The Rose Tattoo" ]
+    },
+    "reftime" : 1474946532901
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1956",
+      "ref" : "cfb9e7a975f6749e",
+      "reftime" : 1474946532929
+    },
+    "value" : {
+      "titles" : [ "Around the World in 80 days", "Friendly Persuasion", "Giant", "The King and I", "The Ten Commandments" ]
+    },
+    "reftime" : 1474946532929
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1957",
+      "ref" : "77f7ea19adcb3fbf",
+      "reftime" : 1474946532948
+    },
+    "value" : {
+      "titles" : [ "The Bridge on the River Kwai", "12 Angry Men", "Peyton Place", "Sayonara", "Witness for the Prosecution" ]
+    },
+    "reftime" : 1474946532948
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1958",
+      "ref" : "5cc796de0d7d6619",
+      "reftime" : 1474946533398
+    },
+    "value" : {
+      "titles" : [ "Gigi", "Auntie Mame", "Cat on a Hot Tin Roof", "The Defiant Ones", "Separate Tables" ]
+    },
+    "reftime" : 1474946533398
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1959",
+      "ref" : "933276bee27ff11a",
+      "reftime" : 1474946533412
+    },
+    "value" : {
+      "titles" : [ "Ben-Hur", "Anatomy of a Murder", "The Diary of Anne Frank", "The Nun's Story", "Room at the Top" ]
+    },
+    "reftime" : 1474946533412
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1960",
+      "ref" : "ed5ddf44f0046bd3",
+      "reftime" : 1474946533400
+    },
+    "value" : {
+      "titles" : [ "The Apartment", "The Alamo", "Elmer Gantry", "Sons and Lovers", "The Sundowners" ]
+    },
+    "reftime" : 1474946533400
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1961",
+      "ref" : "ffc4fad176f4d339",
+      "reftime" : 1474946533431
+    },
+    "value" : {
+      "titles" : [ "West Side Story", "Fanny", "The Guns of Navarone", "The Hustler", "Judgment at Nuremberg" ]
+    },
+    "reftime" : 1474946533431
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1962",
+      "ref" : "385a8975e59482d9",
+      "reftime" : 1474946533449
+    },
+    "value" : {
+      "titles" : [ "Lawrence of Arabia", "The Longest Day", "The Music Man", "Mutiny on the Bounty", "To Kill a Mockingbird" ]
+    },
+    "reftime" : 1474946533449
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1963",
+      "ref" : "d9a9a3c00e370e0e",
+      "reftime" : 1474946533880
+    },
+    "value" : {
+      "titles" : [ "Tom Jones", "America, America", "Cleopatra", "How the West Was Won", "Lilies of the Field" ]
+    },
+    "reftime" : 1474946533880
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1964",
+      "ref" : "72abef7b72dfb6dd",
+      "reftime" : 1474946533888
+    },
+    "value" : {
+      "titles" : [ "My Fair Lady", "Becket", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "Mary Poppins", "Zorba the Greek" ]
+    },
+    "reftime" : 1474946533888
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1965",
+      "ref" : "7f2287c1d54b513e",
+      "reftime" : 1474946533846
+    },
+    "value" : {
+      "titles" : [ "The Sound of Music", "Darling", "Doctor Zhivago", "Ship of Fools", "A Thousand Clowns" ]
+    },
+    "reftime" : 1474946533846
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1966",
+      "ref" : "e27b12e34aa20fed",
+      "reftime" : 1474946533894
+    },
+    "value" : {
+      "titles" : [ "A Man for All Seasons", "Alfie", "The Russians Are Coming, the Russians Are Coming", "the Sand Pebbles", "Who's Afraid of Virginia Woolf?" ]
+    },
+    "reftime" : 1474946533894
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1967",
+      "ref" : "ea7ad1e9d4f4ec82",
+      "reftime" : 1474946533912
+    },
+    "value" : {
+      "titles" : [ "IN the Heat of the Night", "Bonnie and Clyde", "Doctor Dolittle", "The Graduate", "Guess Who's Coming to Dinner" ]
+    },
+    "reftime" : 1474946533912
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1968",
+      "ref" : "c331164175e06f31",
+      "reftime" : 1474946535654
+    },
+    "value" : {
+      "titles" : [ "Oliver!", "Funny Girl", "The Lion in WInter", "Rachel, Rachel", "Romeo and Juliet" ]
+    },
+    "reftime" : 1474946535654
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1969",
+      "ref" : "00f0fd23208c26b9",
+      "reftime" : 1474946535679
+    },
+    "value" : {
+      "titles" : [ "Midnight Cowboy", "Anne of the Thousand Days", "Butch Cassidy and the Sundance Kid", "Hello, Dolly!", "Z" ]
+    },
+    "reftime" : 1474946535679
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1970",
+      "ref" : "6befd4b730fc6ffa",
+      "reftime" : 1474946535664
+    },
+    "value" : {
+      "titles" : [ "Patton", "Airport", "Five Easy Pieces", "Love Story", "MASH" ]
+    },
+    "reftime" : 1474946535664
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1971",
+      "ref" : "acfcdd69d0c8819f",
+      "reftime" : 1474946535681
+    },
+    "value" : {
+      "titles" : [ "The French Connection", "A Clockwork Orange", "Fiddler on the Roof", "The Last Picture Show", "Nicholas and Alexandra" ]
+    },
+    "reftime" : 1474946535681
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1972",
+      "ref" : "b324c2396f711f3c",
+      "reftime" : 1474946535680
+    },
+    "value" : {
+      "titles" : [ "The Godfather", "Cabaret", "Deliverance", "The Emigrants", "Sounder" ]
+    },
+    "reftime" : 1474946535680
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1973",
+      "ref" : "de9ca4d95e8f4bc2",
+      "reftime" : 1474946536164
+    },
+    "value" : {
+      "titles" : [ "The Sting", "American Graffiti", "Cries and Whispers", "The Exorcist", "A Touch of Class" ]
+    },
+    "reftime" : 1474946536164
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1974",
+      "ref" : "8142646c0fcf4f4e",
+      "reftime" : 1474946536158
+    },
+    "value" : {
+      "titles" : [ "The Godfather Part II", "Chinatown", "The Conversation", "Lenny", "The Towering Inferno" ]
+    },
+    "reftime" : 1474946536158
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1975",
+      "ref" : "0bd0daa5fda029ba",
+      "reftime" : 1474946536182
+    },
+    "value" : {
+      "titles" : [ "One Flew Over the Cuckoo's Nest", "Barry Lyndon", "Dog Day Afternoon", "Jaws", "Nashville" ]
+    },
+    "reftime" : 1474946536182
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1976",
+      "ref" : "b3cf7ddfa5548e17",
+      "reftime" : 1474946536163
+    },
+    "value" : {
+      "titles" : [ "Rocky", "All the President's Men", "Bound for Glory", "Network", "Taxi Driver" ]
+    },
+    "reftime" : 1474946536163
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1977",
+      "ref" : "24ed0185d6fb4abc",
+      "reftime" : 1474946536174
+    },
+    "value" : {
+      "titles" : [ "Annie Hall", "The Goodbye Girl", "Julia", "Star Wars", "The Turning Point" ]
+    },
+    "reftime" : 1474946536174
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1978",
+      "ref" : "f5c3645b5259b36e",
+      "reftime" : 1474946536570
+    },
+    "value" : {
+      "titles" : [ "The Deer Hunter", "Coming Home", "Heaven Can Wait", "Midnight Express", "An Unmarried Woman" ]
+    },
+    "reftime" : 1474946536570
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1979",
+      "ref" : "da56f7e575225d8d",
+      "reftime" : 1474946536584
+    },
+    "value" : {
+      "titles" : [ "Kramer vs. Kramer", "All That Jazz", "Apocalypse Now", "Breaking Away", "Norma Rae" ]
+    },
+    "reftime" : 1474946536584
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1980",
+      "ref" : "601fe29acecb97cf",
+      "reftime" : 1474946536559
+    },
+    "value" : {
+      "titles" : [ "Ordinary People", "Coal Miner's Daughter", "The Elephant Man", "Raging Bull", "Tess" ]
+    },
+    "reftime" : 1474946536559
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1981",
+      "ref" : "5a6a94bab750a9c4",
+      "reftime" : 1474946536581
+    },
+    "value" : {
+      "titles" : [ "Chariots of Fire", "Atlantic City", "On Golden Pond", "Raiders of the Lost Ark", "Reds" ]
+    },
+    "reftime" : 1474946536581
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1982",
+      "ref" : "1f87334eb6e0ebfd",
+      "reftime" : 1474946536593
+    },
+    "value" : {
+      "titles" : [ "Gandhi", "E.T. the Extra-Terrestrial", "Missing", "Tootsie", "The Verdict" ]
+    },
+    "reftime" : 1474946536593
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1983",
+      "ref" : "0aff1affe242ad80",
+      "reftime" : 1474946536948
+    },
+    "value" : {
+      "titles" : [ "Terms of Endearment", "The Big Chill", "The Dresser", "The Right Stuff", "Tender Mercies" ]
+    },
+    "reftime" : 1474946536948
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1984",
+      "ref" : "d7e60a84e2e74e83",
+      "reftime" : 1474946536960
+    },
+    "value" : {
+      "titles" : [ "Amadeus", "The Killing Fields", "A Passage to India", "Places in the Heart", "A Soldiers Story" ]
+    },
+    "reftime" : 1474946536960
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1985",
+      "ref" : "b3fbebb2f5be35b3",
+      "reftime" : 1474946536982
+    },
+    "value" : {
+      "titles" : [ "Out of Africa", "The Color Purple", "Kiss of the Spider Woman", "Prizzi's Honor", "Witness" ]
+    },
+    "reftime" : 1474946536982
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1986",
+      "ref" : "c2875166b775453f",
+      "reftime" : 1474946536996
+    },
+    "value" : {
+      "titles" : [ "Platoon", "Children of a Lesser God", "Hannah and Her Sisters", "The Mission", "A Room with a View" ]
+    },
+    "reftime" : 1474946536996
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1987",
+      "ref" : "5f58e2a9d3369bea",
+      "reftime" : 1474946537008
+    },
+    "value" : {
+      "titles" : [ "The Last Emperor", "Broadcast News", "Fatal Attraction", "Hope and Glory", "Moonstruck" ]
+    },
+    "reftime" : 1474946537008
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1988",
+      "ref" : "af80c37591a564fd",
+      "reftime" : 1474946537382
+    },
+    "value" : {
+      "titles" : [ "Rain Man", "The Accidental Tourist", "Dangerous Liaisons", "Mississippi Burning", "Working Girl" ]
+    },
+    "reftime" : 1474946537382
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1989",
+      "ref" : "53b41508623bc52c",
+      "reftime" : 1474946537383
+    },
+    "value" : {
+      "titles" : [ "Driving Miss Daisy", "Born on the Fourth of July", "Dead Poets Society", "Field of Dreams", "My Left Foot" ]
+    },
+    "reftime" : 1474946537383
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1990",
+      "ref" : "8f3a4a7e427e096f",
+      "reftime" : 1474946537408
+    },
+    "value" : {
+      "titles" : [ "Dances with Wolves", "Awakenings", "Ghost", "The Godfather Part III", "Goodfellas" ]
+    },
+    "reftime" : 1474946537408
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1991",
+      "ref" : "cd2d1f4f999c0677",
+      "reftime" : 1474946537380
+    },
+    "value" : {
+      "titles" : [ "The Silence of the Lambs", "Beauty and the Beast", "Bugsy", "JFK", "The Prince of Tides" ]
+    },
+    "reftime" : 1474946537380
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1992",
+      "ref" : "70aae73432ec207d",
+      "reftime" : 1474946537408
+    },
+    "value" : {
+      "titles" : [ "Unforgiven", "The Crying Game", "A Few Good Men", "Howards End", "Scent of a Woman" ]
+    },
+    "reftime" : 1474946537408
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1993",
+      "ref" : "d6ad2d17935c281a",
+      "reftime" : 1474946537803
+    },
+    "value" : {
+      "titles" : [ "Schindler's List", "The Fugitive", "In the Name of the Father", "The Piano", "The Remains of the Day" ]
+    },
+    "reftime" : 1474946537803
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1994",
+      "ref" : "95df300705940383",
+      "reftime" : 1474946537789
+    },
+    "value" : {
+      "titles" : [ "Forest Gump", "Four Weddings and a Funeral", "Pulp Fiction", "Quiz Show", "The Shawshank Redemption" ]
+    },
+    "reftime" : 1474946537789
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1995",
+      "ref" : "2b9fb24b111fde8c",
+      "reftime" : 1474946537805
+    },
+    "value" : {
+      "titles" : [ "Braveheart", "Apollo 13", "Babe", "The Postman", "Sense and Sensibility" ]
+    },
+    "reftime" : 1474946537805
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1996",
+      "ref" : "e412932181ba4dba",
+      "reftime" : 1474946537826
+    },
+    "value" : {
+      "titles" : [ "The English Patient", "Fargo", "Jerry Maguire", "Secrets And Lies", "Shine" ]
+    },
+    "reftime" : 1474946537826
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1997",
+      "ref" : "aa572aeac4fcdeb1",
+      "reftime" : 1474946537822
+    },
+    "value" : {
+      "titles" : [ "Titanic", "As Good as It Gets", "The Full Monty", "Good Will Hunting", "L.A. Confidential" ]
+    },
+    "reftime" : 1474946537822
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1998",
+      "ref" : "d25d4f2f5a1052b9",
+      "reftime" : 1474946538205
+    },
+    "value" : {
+      "titles" : [ "Shakespeare in Love", "Elizabeth", "Life is Beautiful", "Saving Private Ryan", "The Thin Red Line" ]
+    },
+    "reftime" : 1474946538205
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "1999",
+      "ref" : "af6ebdd75c85cf94",
+      "reftime" : 1474946538216
+    },
+    "value" : {
+      "titles" : [ "American Beauty", "The Cider House Rules", "The Green Mile", "The Insider", "The Sixth Sense" ]
+    },
+    "reftime" : 1474946538216
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2000",
+      "ref" : "863567ebe43204b8",
+      "reftime" : 1474946538220
+    },
+    "value" : {
+      "titles" : [ "Gladiator", "Chocolat", "Crouching Tiger, Hidden Dragon", "Erin Brockovich", "Traffic" ]
+    },
+    "reftime" : 1474946538220
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2001",
+      "ref" : "383c1a04cd3d0f68",
+      "reftime" : 1474946538228
+    },
+    "value" : {
+      "titles" : [ "A Beautiful Mind", "Gosford Park", "In the Bedroom", "The Lord of the Rings: The Fellowship of the Ring", "Moulin Rouge!" ]
+    },
+    "reftime" : 1474946538228
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2002",
+      "ref" : "c3c92bb11550645e",
+      "reftime" : 1474946538250
+    },
+    "value" : {
+      "titles" : [ "Chicago", "Gangs of New York", "The Hours", "The Lord of the Rings: The Two Towers", "The Pianist" ]
+    },
+    "reftime" : 1474946538250
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2003",
+      "ref" : "e33c88bb933182cc",
+      "reftime" : 1474946538628
+    },
+    "value" : {
+      "titles" : [ "The Lord of the Rings: The Return of the King", "Lost in Translation", "Master and Commander: The Far Side of the World", "Mystic River", "Seabiscuit" ]
+    },
+    "reftime" : 1474946538628
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2004",
+      "ref" : "ca9425dc675cd21e",
+      "reftime" : 1474946538630
+    },
+    "value" : {
+      "titles" : [ "Million Dollar Baby", "The Aviator", "Finding Neverland", "Ray", "Sideways" ]
+    },
+    "reftime" : 1474946538630
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2005",
+      "ref" : "dd88da2f1ce24e8b",
+      "reftime" : 1474946538623
+    },
+    "value" : {
+      "titles" : [ "Crash", "Brokeback Mountain", "Capote", "Good Night, and Good Luck", "Munich" ]
+    },
+    "reftime" : 1474946538623
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2006",
+      "ref" : "a6c8f14f57d654df",
+      "reftime" : 1474946538641
+    },
+    "value" : {
+      "titles" : [ "The Departed", "Babel", "Letters from Iwo Jima", "Little Miss Sunshine", "The Queen" ]
+    },
+    "reftime" : 1474946538641
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2007",
+      "ref" : "e085f494a28852e0",
+      "reftime" : 1474946538675
+    },
+    "value" : {
+      "titles" : [ "No Country for Old Men", "Atonement", "Juno", "Michael Clayton", "There Will Be Blood" ]
+    },
+    "reftime" : 1474946538675
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2008",
+      "ref" : "4ef7b17b60d40e49",
+      "reftime" : 1474946539037
+    },
+    "value" : {
+      "titles" : [ "Slumdog Millionaire", "The Curious Case of Benjamin Button", "Frost/Nixon", "Milk", "The Reader" ]
+    },
+    "reftime" : 1474946539037
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2009",
+      "ref" : "5a194d5aa41f976c",
+      "reftime" : 1474946539023
+    },
+    "value" : {
+      "titles" : [ "The Hurt Locker", "Avatar", "The Blind Side", "District 9", "An Education", "Inglourious Basterds", "Precious", "A Serious Man", "Up", "Up in the Air" ]
+    },
+    "reftime" : 1474946539023
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2010",
+      "ref" : "b9ece5c7e180ce9d",
+      "reftime" : 1474946539023
+    },
+    "value" : {
+      "titles" : [ "The King's Speech", "127 Hours", "Black Swan", "The Fighter", "Inception", "The Kids Are All Right", "The Social Network", "Toy Story 3", "True Grit", "Winter's Bone" ]
+    },
+    "reftime" : 1474946539023
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2011",
+      "ref" : "d61d8898602db956",
+      "reftime" : 1474946539067
+    },
+    "value" : {
+      "titles" : [ "The Artist", "The Descendants", "Extremely Loud and Incredibly Close", "The Help", "Hugo", "Midnight in Paris", "Moneyball", "The Tree of Life", "War Horse" ]
+    },
+    "reftime" : 1474946539067
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2012",
+      "ref" : "a44f8c90ae16621c",
+      "reftime" : 1474946539080
+    },
+    "value" : {
+      "titles" : [ "Argo", "Amour", "Beasts of the Southern Wild", "Django Unchained", "Les Miserables (2012)", "Life of Pi", "Lincoln", "Silver Linings Playbook", "Zero Dark Thirty" ]
+    },
+    "reftime" : 1474946539080
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2013",
+      "ref" : "99c77f49d756ebef",
+      "reftime" : 1474946539429
+    },
+    "value" : {
+      "titles" : [ "12 Years a Slave", "American Hustle", "Captain Phillips", "Dallas Buyers Club", "Gravity", "Her", "Nebraska", "Philomena", "The Wolf of Wall Street" ]
+    },
+    "reftime" : 1474946539429
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2014",
+      "ref" : "e181300c2948d2eb",
+      "reftime" : 1474946539447
+    },
+    "value" : {
+      "titles" : [ "Whiplash", "American Sniper", "Birdman", "The Grand Budapest Hotel", "The Imitation Game", "Selma", "The Theory of Everything", "Boyhood" ]
+    },
+    "reftime" : 1474946539447
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2015",
+      "ref" : "59c3118e90a70c87",
+      "reftime" : 1474946539432
+    },
+    "value" : {
+      "titles" : [ "Bridge of Spies", "Mad Max: Fury Road", "The Revenant", "Spotlight", "The Martian", "The Big Short", "Room", "Brooklyn" ]
+    },
+    "reftime" : 1474946539432
+  } ]
+}
