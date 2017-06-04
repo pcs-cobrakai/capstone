@@ -4,7 +4,7 @@
 |----------------------------------------------------------
 *
 */
-var movieIdList = [];
+var movieIdList = [], yearval;
 
 // ===== main view =====
 
@@ -16,9 +16,13 @@ atna.views.atna = Backbone.View.extend({
 		
 		// fire app when dropdown changes
 		$('select').on('change', function() {
-			
+		
+			if($(this).val() >= '1934')
+				yearval = $(this).val() -1;
+			else
+				yearval = $(this).val();
 			// make our request for movies titles from database
-			$.get('/year/' + $(this).val(), function(data) {
+			$.get('/year/' + yearval, function(data) {
 				var dataObject = JSON.parse(data);
 				
 				// create instance of our results view
@@ -42,7 +46,7 @@ atna.views.atna = Backbone.View.extend({
 		// have jquery create our option dropdowns
 		var year = $('#year');
 		
-		for(var count = 2015; count >= 1928; --count) {
+		for(var count = 2017; count >= 1928; --count) {
 			$('<option>' + count + '</option>').appendTo(year);
 		}
 	}

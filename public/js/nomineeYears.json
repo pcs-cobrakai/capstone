@@ -1056,5 +1056,17 @@
       "titles" : [ "Bridge of Spies", "Mad Max: Fury Road", "The Revenant", "Spotlight", "The Martian", "The Big Short", "Room", "Brooklyn" ]
     },
     "reftime" : 1474946539432
+  }, {
+    "path" : {
+      "kind" : "item",
+      "collection" : "capstone",
+      "key" : "2016",
+      "ref" : "59c3118e90a70c87",
+      "reftime" : 1474946539432
+    },
+    "value" : {
+      "titles": [ "La La Land", "Hell or High Water", "Hacksaw Ridge", "Arrival", "Hidden Figures", "Manchester by the Sea", "Lion", "Moonlight", "Fences" ]
+    },
+    "reftime" : 1474946539432
   } ]
 }
